@@ -35,7 +35,7 @@ Please do a Google/GPT conversation for help with installing Python and Python p
    - or **Download ZIP** → extract it to a folder on your computer.
 
 
-2b. Review the code to make sure you are comfortable with it. It is a single short Python script.
+2. Review the code to make sure you are comfortable with it. It is a single short Python script.
 If you are unsure about something, I am happy to go over it with you, or you can consult
 GPT to answer any questions.
 

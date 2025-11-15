@@ -98,7 +98,6 @@ if __name__ == '__main__':
 
     assert os.path.exists(OBFUS_DIRECTORY), f"You must create the obfuscated directory {OBFUS_DIRECTORY}"
 
-
     for f in os.listdir(INPUT_DIRECTORY):
 
         orgpath = INPUT_DIRECTORY / f

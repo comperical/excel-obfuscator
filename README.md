@@ -119,24 +119,3 @@ The header row is preserved if present, but all data values are transformed usin
 
 All sheets within each workbook are processed automatically.
 
----
-
-## Requirements
-
-### 1. Install Python (Windows)
-
-If you do not already have Python installed:
-
-1. Download Python from:  
-   **https://www.python.org/downloads/windows/**
-2. During installation, **check the box** that says:  
-   **“Add Python to PATH”**
-3. Complete the installer.
-
-### 2. Install the Required Python Packages
-
-Open **Command Prompt** and run:
-
-```cmd
-pip install pandas openpyxl
-```

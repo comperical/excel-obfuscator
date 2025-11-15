@@ -17,7 +17,7 @@ Follow these steps to use the obfuscation script:
 run the following commands:
 
 ```
-WanderingThoughts:script dburfoot$ python
+C:\Users\YourName> python
 Python 3.9.6 (default, Feb  3 2024, 15:58:27) 
 [Clang 15.0.0 (clang-1500.3.9.4)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.

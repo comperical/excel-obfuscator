@@ -35,11 +35,11 @@ Please do a Google/GPT conversation for help with installing Python and Python p
    - or **Download ZIP** → extract it to a folder on your computer.
 
 
-2. Review the code to make sure you are comfortable with it. It is a single short Python script.
+3. Review the code to make sure you are comfortable with it. It is a single short Python script.
 If you are unsure about something, I am happy to go over it with you, or you can consult
 GPT to answer any questions.
 
-3. Run the script on the test data. The repo includes some `.xlsx` files to use as test data.
+4. Run the script on the test data. The repo includes some `.xlsx` files to use as test data.
 Open a shell to the repo directory, and run:
 
 ```
@@ -62,7 +62,7 @@ Going to obfuscate file:
 
 
 
-4. **Create a folder for your original data**  
+5. **Create a folder for your original data**  
    Make a directory such as:  
 
 ```
@@ -71,7 +71,7 @@ C:\ClientData\original
 
 and place your Excel files (`.xlsx`) inside it.
 
-5. **Edit the Python script to point to your data**  
+6. **Edit the Python script to point to your data**  
 At the top of the script, update:  
 ```
 INPUT_DIRECTORY = Path("C:\ClientData\original")
@@ -82,17 +82,17 @@ You can also update the Obfuscated directory path if desired,
     with the name `obfuscated`.
 
 
-6. Review the Obfuscated data. Open the `.xlsx` files that have been created,
+7. Review the Obfuscated data. Open the `.xlsx` files that have been created,
     and confirm that the obfuscation code has worked.
 
 
-6b. (Optional). Since the obfuscation is very strict, it may be necessary to preserve
+8. (Optional). Since the obfuscation is very strict, it may be necessary to preserve
     a few "landmark" cells in the data. To preserve a cell, edit the content
     so that it has the exact prefix `PRESERVE:`.
     The code will not obfuscate cells with this prefix.
     Rerun the obfuscator and confirm that the preserved cells are readable as expected.
 
-7. Share the obfuscated Excel data files.
+9. Share the obfuscated Excel data files.
 
 
 

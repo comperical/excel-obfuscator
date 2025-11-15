@@ -6,6 +6,81 @@ It is designed for IT/security personnel who need to share example data external
 The script does **not** modify the original files.  
 All obfuscated files are written into a separate folder.
 
+
+---
+
+# 📝 Instructions (Quick Start)
+
+Follow these steps to use the obfuscation script:
+
+1. Make sure you have Python and the required packages installed. To test this, you can 
+run the following commands:
+
+```
+WanderingThoughts:script dburfoot$ python3
+Python 3.9.6 (default, Feb  3 2024, 15:58:27) 
+[Clang 15.0.0 (clang-1500.3.9.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pandas as pd
+>>> import openpyxl
+```
+
+The exact version is not critical, but we need Pandas and openpyxl to read the Excel files.
+
+
+2. **Get the repository**  
+   Download the project using either:  
+   - `git clone https://github.com/comperical/excel-obfuscator.git`
+   - or **Download ZIP** → extract it to a folder on your computer.
+
+3. Run the script on the test data. The repo includes some `.xlsx` files to use as test data.
+Open a shell to the repo directory, and run:
+
+```
+python3 excel_obfuscator.py
+```
+
+If everything is installed correctly, you should see this kind of output:
+```
+WanderingThoughts:script dburfoot$ python3 excel_obfuscator.py 
+Going to obfuscate file: 
+    /opt/userdata/external/excel-obfuscator/original/Offenses_P.xlsx
+    /opt/userdata/external/excel-obfuscator/obfuscated/Offenses_P.xlsx
+Going to obfuscate file: 
+    /opt/userdata/external/excel-obfuscator/original/EnergyOverview.xlsx
+    /opt/userdata/external/excel-obfuscator/obfuscated/EnergyOverview.xlsx
+Going to obfuscate file: 
+    /opt/userdata/external/excel-obfuscator/original/historicalcpi_P.xlsx
+    /opt/userdata/external/excel-obfuscator/obfuscated/historicalcpi_P.xlsx
+```
+
+
+
+2. **Create a folder for your original data**  
+   Make a directory such as:  
+
+```
+C:\ClientData\original
+```
+
+and place your Excel files (`.xlsx`) inside it.
+
+3. **Edit the Python script to point to your data**  
+At the top of the script, update:  
+```
+INPUT_DIRECTORY = Path("C:/path/to/your/original")
+```
+
+Make sure the obfuscated folder exists.
+
+Install Python (if needed)
+Install Python from https://www.python.org/downloads/windows/
+
+✔ Be sure to check “Add Python to PATH” during installation.
+
+Install required Python packages (if needed)
+Open Command Prompt and run:
+
 ---
 
 
@@ -47,7 +122,7 @@ For every Excel file in the Input directory, it creates a <b>obfuscated</b> copy
 in the Obfuscated directory.
 
 
-The **header row is preserved exactly**, but all data values are transformed using the following rules:
+The header row is preserved if present, but all data values are transformed using the following rules:
 
 ### Obfuscation Rules
 
@@ -83,3 +158,4 @@ Open **Command Prompt** and run:
 
 ```cmd
 pip install pandas openpyxl
+```

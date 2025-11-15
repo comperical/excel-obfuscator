@@ -17,7 +17,27 @@ original/
 ```
 
 
+---
 
+# ❗ Before You Run the Script: Update the Input Folder Path
+
+At the top of the Python script, you will see this section:
+
+```python
+# ----------- CONFIGURATION ------------
+# Noise for numeric values (e.g., ±20%)
+NUMERIC_NOISE_PCT = 0.20
+
+# Date shift (in days)
+DATE_SHIFT_DAYS = 90
+
+# Enter the path to the original data here
+INPUT_DIRECTORY = Path("C:/PATH/TO/YOUR/ORIGINAL/FOLDER")
+
+# Will create or use a sibling directory called "obfuscated"
+OBFUS_DIRECTORY = Path("C:/PATH/TO/YOUR/OBFUSCATED/FOLDER")
+# --------------------------------------
+```
 
 
 

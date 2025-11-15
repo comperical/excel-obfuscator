@@ -8,9 +8,7 @@ All obfuscated files are written into a separate folder.
 
 ---
 
-## What the Script Does
 
-For every Excel file in the directory:
 
 ```
 original/
@@ -41,6 +39,12 @@ INPUT_DIRECTORY = Path("C:/PATH/TO/YOUR/ORIGINAL/FOLDER")
 
 You should edit the source code to point to the location of your original data.
 
+
+
+## What the Script Does
+
+For every Excel file in the Input directory, it creates a <b>obfuscated</b> copy of the file
+in the Obfuscated directory.
 
 
 The **header row is preserved exactly**, but all data values are transformed using the following rules:

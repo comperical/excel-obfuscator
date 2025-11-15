@@ -1,7 +1,11 @@
+
+import os
 import pandas as pd
 import hashlib
 import random
 import datetime
+
+from pathlib import Path
 
 # ----------- CONFIGURATION ------------
 # Noise for numeric values (e.g., ±20%)
@@ -9,6 +13,13 @@ NUMERIC_NOISE_PCT = 0.20
 
 # Date shift (in days)
 DATE_SHIFT_DAYS = 90
+
+# Enter the path to the original data here
+INPUT_DIRECTORY = Path(__file__).parent.parent / "original"
+
+# Will create a sibling directory called "obfuscated"
+OBFUS_DIRECTORY = INPUT_DIRECTORY.parent / "obfuscated"
+
 
 # --------------------------------------
 
@@ -83,7 +94,17 @@ def obfuscate_excel(infile, outfile):
 # ------------------ RUN ------------------
 
 
-file1 = "/Users/dburfoot/Desktop/CurrentProjects/EInk/historicalcpi2.xlsx"
-file2 = file1.replace(".xlsx", "_obfus.xlsx")
+if __name__ == '__main__':
 
-obfuscate_excel(file1, file2)
+    assert os.path.exists(OBFUS_DIRECTORY), f"You must create the obfuscated directory {OBFUS_DIRECTORY}"
+
+
+    for f in os.listdir(INPUT_DIRECTORY):
+
+        orgpath = INPUT_DIRECTORY / f
+        obspath = OBFUS_DIRECTORY / f
+        print(f"Going to obfuscate file: \n\t{orgpath}\n\t{obspath}")
+
+
+        obfuscate_excel(orgpath, obspath)
+

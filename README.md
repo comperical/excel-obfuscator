@@ -56,7 +56,7 @@ Going to obfuscate file:
 
 
 
-2. **Create a folder for your original data**  
+4. **Create a folder for your original data**  
    Make a directory such as:  
 
 ```
@@ -65,54 +65,29 @@ C:\ClientData\original
 
 and place your Excel files (`.xlsx`) inside it.
 
-3. **Edit the Python script to point to your data**  
+5. **Edit the Python script to point to your data**  
 At the top of the script, update:  
 ```
-INPUT_DIRECTORY = Path("C:/path/to/your/original")
+INPUT_DIRECTORY = Path("C:\ClientData\original")
 ```
 
-Make sure the obfuscated folder exists.
-
-Install Python (if needed)
-Install Python from https://www.python.org/downloads/windows/
-
-✔ Be sure to check “Add Python to PATH” during installation.
-
-Install required Python packages (if needed)
-Open Command Prompt and run:
-
----
+You can also update the Obfuscated directory path if desired,
+    if you don't change it, the code will use a sibling directory to the original folder,
+    with the name `obfuscated`.
 
 
-
-```
-original/
-```
+6. Review the Obfuscated data. Open the `.xlsx` files that have been created,
+    and confirm that the obfuscation code has worked.
 
 
----
+6b. (Optional). Since the obfuscation is very strict, it may be necessary to preserve
+    a few "landmark" cells in the data. To preserve a cell, edit the content
+    so that it has the exact prefix `PRESERVE:`.
+    The code will not obfuscate cells with this prefix.
+    Rerun the obfuscator and confirm that the preserved cells are readable as expected.
 
-# ❗ Before You Run the Script: Update the Input Folder Path
+7. Share the obfuscated Excel data files.
 
-At the top of the Python script, you will see this section:
-
-```python
-# ----------- CONFIGURATION ------------
-
-
-...
-
-# Date shift (in days)
-DATE_SHIFT_DAYS = 90
-
-# Enter the path to the original data here
-INPUT_DIRECTORY = Path("C:/PATH/TO/YOUR/ORIGINAL/FOLDER")
-
-...
-# --------------------------------------
-```
-
-You should edit the source code to point to the location of your original data.
 
 
 

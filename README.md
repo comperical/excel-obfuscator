@@ -9,7 +9,7 @@ All obfuscated files are written into a separate folder.
 
 ---
 
-# 📝 Instructions (Quick Start)
+# 📝 Instructions
 
 Follow these steps to use the obfuscation script:
 
@@ -26,12 +26,18 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 The exact version is not critical, but we need Pandas and openpyxl to read the Excel files.
+Please do a Google/GPT conversation for help with installing Python and Python packages.
 
 
-2. **Get the repository**  
-   Download the project using either:  
+2. **Get the repository**
+   Download the project using either:
    - `git clone https://github.com/comperical/excel-obfuscator.git`
    - or **Download ZIP** → extract it to a folder on your computer.
+
+
+2b. Review the code to make sure you are comfortable with it. It is a single short Python script.
+If you are unsure about something, I am happy to go over it with you, or you can consult
+GPT to answer any questions.
 
 3. Run the script on the test data. The repo includes some `.xlsx` files to use as test data.
 Open a shell to the repo directory, and run:

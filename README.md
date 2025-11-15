@@ -17,7 +17,7 @@ Follow these steps to use the obfuscation script:
 run the following commands:
 
 ```
-WanderingThoughts:script dburfoot$ python3
+WanderingThoughts:script dburfoot$ python
 Python 3.9.6 (default, Feb  3 2024, 15:58:27) 
 [Clang 15.0.0 (clang-1500.3.9.4)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -43,21 +43,24 @@ GPT to answer any questions.
 Open a shell to the repo directory, and run:
 
 ```
-python3 excel_obfuscator.py
+C:\Users\YourName\ExternalCode\excel-obfuscator\script> python excel_obfuscator.py
 ```
 
 If everything is installed correctly, you should see this kind of output:
 ```
-WanderingThoughts:script dburfoot$ python3 excel_obfuscator.py 
-Going to obfuscate file: 
-    /opt/userdata/external/excel-obfuscator/original/Offenses_P.xlsx
-    /opt/userdata/external/excel-obfuscator/obfuscated/Offenses_P.xlsx
-Going to obfuscate file: 
-    /opt/userdata/external/excel-obfuscator/original/EnergyOverview.xlsx
-    /opt/userdata/external/excel-obfuscator/obfuscated/EnergyOverview.xlsx
-Going to obfuscate file: 
-    /opt/userdata/external/excel-obfuscator/original/historicalcpi_P.xlsx
-    /opt/userdata/external/excel-obfuscator/obfuscated/historicalcpi_P.xlsx
+C:\Users\YourName\ExternalCode\excel-obfuscator\script> python excel_obfuscator.py
+Going to obfuscate file:
+    C:\Users\YourName\ExternalCode\excel-obfuscator\original\Offenses_P.xlsx
+    C:\Users\YourName\ExternalCode\excel-obfuscator\obfuscated\Offenses_P.xlsx
+
+Going to obfuscate file:
+    C:\Users\YourName\ExternalCode\excel-obfuscator\original\EnergyOverview.xlsx
+    C:\Users\YourName\ExternalCode\excel-obfuscator\obfuscated\EnergyOverview.xlsx
+
+Going to obfuscate file:
+    C:\Users\YourName\ExternalCode\excel-obfuscator\original\historicalcpi_P.xlsx
+    C:\Users\YourName\ExternalCode\excel-obfuscator\obfuscated\historicalcpi_P.xlsx
+
 ```
 
 
